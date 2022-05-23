@@ -1,0 +1,178 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box; 
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+:root{
+    --primary-color : #5c73f5;
+    --secondry-color:#036bf3;
+    --text-color:#fafafa;
+    --heading-color:#fffff5;
+    --dark-heading:#010933;
+    --large-font:55px;
+    --medium-fonnt:30px;
+    --small-font:16px;
+    --text-font:'Poppins', sans-serif;
+    --heading-font:'Montserrat', sans-serif;
+}
+/*divider*/
+.divider {								/* minor cosmetics */
+    display: table; 
+    font-size: 30px; 
+    text-align: center; 
+    width: 75%; 						/* divider width */
+    margin: 40px auto;					/* spacing above/below */
+}
+.divider span { display: table-cell; position: relative; }
+.divider span:first-child, .divider span:last-child {
+    width: 50%;
+    top: 25px;							/* adjust vertical align */
+    -moz-background-size: 100% 2px; 	/* line width */
+    background-size: 100% 2px; 			/* line width */
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+}
+.divider span:first-child {				/* color changes in here */
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgb(0, 15, 80)));
+    background-image: -webkit-linear-gradient(180deg, transparent, rgb(0, 15, 80));
+    background-image: -moz-linear-gradient(180deg, transparent, rgb(0, 15, 80));
+    background-image: -o-linear-gradient(180deg, transparent, rgb(0, 15, 80));
+    background-image: linear-gradient(90deg, transparent, rgb(0, 15, 80));
+}
+.divider span:nth-child(2) {
+    color: rgb(0, 15, 80); padding: 0px 5px; width: auto; white-space: nowrap;
+}
+.divider span:last-child {				/* color changes in here */
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(0, 15, 80)), to(transparent));
+    background-image: -webkit-linear-gradient(180deg, rgb(0, 15, 80), transparent);
+    background-image: -moz-linear-gradient(180deg, rgb(0, 15, 80), transparent);
+    background-image: -o-linear-gradient(180deg, rgb(0, 15, 80), transparent);
+    background-image: linear-gradient(90deg, rgb(0, 15, 80), transparent);
+}
+
+
+h1,h2,h3,h4,h5,h6{
+font-family:'Montserrat', sans-serif;
+}
+p{
+    font-family: var(--text-font);
+}
+.btn-color{
+    background-color: var(--secondry-color);
+    color: var(--text-color) !important;
+    box-shadow: 4px 8px 12px #ccc;
+}
+.btn-color:hover{
+    background-color: #304ffe;
+    transition:  500ms ease-in-out;
+}
+
+/**********HEADER-SECTIONS*****************/
+
+header{
+    background-color: var(--text-color);
+}
+
+.dropdown-menu{
+    background-color: var(--text-color);
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+    
+}
+.dropdown-menu{
+    margin-top: 0;
+}
+
+.nav-bg  li a {
+    color: var(--dark-heading) !important;
+    font-size: 18px;
+    font-family: var(--text-font);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.dropdown-menu a:hover {
+    color: black !important;
+}
+
+/*tag-line*/
+.tag-line{
+    background-color:var(--secondry-color);
+    color: var(--heading-color);
+}
+.tag-line h2{
+    font-family: var(--heading-font);
+}
+
+
+/***************FEATURE**************/
+.feature{
+    background-color: #f0fcfb;
+}
+.feature-heading{
+    color: var(--dark-heading);
+    font-size: 2.2em;
+    font-family: var(--heading-font);
+}
+.feature-text{
+    color: #000007;
+    font-size: 18px;
+}
+
+.csp-card{
+    background-color: #e4edfa;
+    border: 2px solid #010933;
+    box-shadow: 4px 4px 8px #ccc;
+    border-radius: 20px;
+}
+.csp-card img{
+    border-radius: 20px;
+}
+
+/**************Testimonials***********************/
+
+@media only screen and (max-width:768px) {
+
+    .test-user{
+    margin-top: 66px;
+   }
+
+     }
+
+
+   .card-user{
+
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+   }
+
+   .card-user:hover{
+
+    background-color: #eee;
+
+   }
+
+   .ratings i{
+
+    color: orange;
+   }
+
+   .testimonial-list{
+
+    list-style: none;
+   }
+
+   .testimonial-list li{
+
+    margin-bottom: 20px;
+   }
+
+   .testimonials-margin{
+
+    margin-top: -19px;
+   }
+
+/***************Counter**************/
