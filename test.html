@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>
+    
+</title>
+</head>
+<body>
+<form action="">
+    Pin Code : <input type="text" name="pin" id="pin" class="form-control" placeholder="Enter Pin Code" required>
+    <br>
+    Get Value : <input type="text" name="city" id="city" class="form-control" placeholder="Enter Value" >
+    Get Value : <input type="text" name="state" id="state" class="form-control" placeholder="Enter Value" >
+    <input type="submit" onclick="form" id = "form" >
+</form>
+<p id="cityName"></p>
+<script>
+// Enter pin code and get value on change of pin code
+pin = document.getElementById('pin');
+value = document.getElementById('value');
+form = document.getElementById('form');
+// load json data json file
+
+
+
+pin.onchange = function(){
+
+
+
+    if(pin.value == '226005'){
+        city.value = 'Lucknow';
+        state.value = 'Uttar Pradesh';
+        
+    }
+    else if(pin.value == '336001'){
+        city.value = 'Kanpur';
+    }
+    else if(pin.value == '226001'){
+        city.value = 'Lucknow';
+    }
+    else if(pin.value == '229121'){
+        city.value = 'Lalganj';
+    }
+    else if(pin.value == '229122'){
+        city.value = 'Raipur';
+    }
+    else if(pin.value == '229022'){
+        city.value = 'Rampur';
+    }
+    else{
+        city.value = 'Not Found';
+    }
+}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
