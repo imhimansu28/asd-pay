@@ -229,3 +229,11 @@ header{
 footer{
     background-color: #010933;
 }
+
+
+/* demat */
+
+.demat-account  img {
+    width: 180px;
+}
+
