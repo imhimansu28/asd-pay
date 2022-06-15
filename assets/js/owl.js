@@ -2,7 +2,7 @@ $('.one').owlCarousel({
     loop: true,
     margin: 10,
     lazyLoad: true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout:1500,
     animateOut: 'fadeIn',
     autoplayHoverPause:true,
@@ -14,7 +14,7 @@ $('.one').owlCarousel({
             items: 2
         },
         1000: {
-            items: 3
+            items: 4
         }
     }
 })

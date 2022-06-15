@@ -16,80 +16,11 @@
 
 <body>
     <header>
-        <div class="head-bar py-3">
-            <div class="container-fluid">
-                <div class="row text-center">
-                    <div class="col-md-4 col-sm-4 col-xm-4">
-                        <button class="btn btn-warning">
-                            <h5>Play Store <i class="fa fa-play-circle" aria-hidden="true"></i></h5>
-                        </button>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xm-4">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#modelId">
-                            <h5>Get Call <i class="fa fa-phone" aria-hidden="true"></i></h5>
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
-                            aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">Get Call Back From Us</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body text-left">
-                                        <form action="" method="get">
-                                            <div class="form-group">
-                                                <label for="name">Your Name</label>
-                                                <input type="text" name="name" id="name" class="form-control"
-                                                    placeholder="Enter Name" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="phone">Phone Number</label>
-                                                <input type="tel" name="phone" id="phone" class="form-control"
-                                                    placeholder="Enter Phone Number" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="resoan">Select Resoan</label>
-                                                <select class="form-control" name="resoan" id="">
-                                                    <option>CSP</option>
-                                                    <option>Virtual Account</option>
-                                                    <option>Demat Account</option>
-                                                    <option>Student</option>
-                                                    <option>Salary</option>
-                                                    <option>Loan</option>
-                                                    <option>Insurance</option>
-                                                    <option>Other</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="querry">Your Querry</label>
-                                                <textarea class="form-control" name="querry" id="" rows="3"
-                                                    placeholder="Described Your Querry"></textarea>
-                                            </div>
-                                            <button type="submit" class="btn btn-primary">Submit</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xm-4">
-                        <button class="btn btn-warning">
-                            <h5>LogIn <i class="fa fa-user-circle" aria-hidden="true"></i></h5>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid m-0">
+        <div class="container-fluid-fluid m-0">
             <nav class="navbar navbar-expand-lg navbar-light nav-bg ">
-                <div class="brand-logos">
-                    <h1 class="text-primary">Asd Pay</h1>
+                <div class="brand-logos d-flex align-items-center">
+                   <img src="assets/images/logo/logo.png" alt="" width="70px" class="img-fluid round-circle p-2" style="border-radius: 50%;">
+                   <h2 class="text-white text-uppercase">ASD Pay </h2>
                 </div>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                     data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -196,7 +127,7 @@
         </div>
     </section>
     <section class="feature py-5">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row d-flex align-items-center mb-5">
                 <div class="col-md-6 col-sm-12 col-lg-6" data-aos="fade-right" data-aos-offset="100"
                 data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
@@ -315,12 +246,12 @@
         </div>
     </section>
     <section class="csp">
-        <div class="container">
+        <div class="container-fluid">
             <div class="divider"><span></span><span>
                     <h1>Key Feature of CSP</h1>
                 </span><span></span></div>
-            <div class=" one owl-carousel owl-theme px-5">
-                <div class="item" data-aos="fade-down" data-aos-offset="200"
+            <div class=" row py-5   px-5  d-flex justify-content-center">
+                <div class="item col-md-3 d-flex justify-content-center" data-aos="fade-down" data-aos-offset="200"
                 data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" >
                     <div class="card csp-card">
                         <img src="assets/images/csp/2.png" alt="" class="img-card-top fs-lightbox">
@@ -329,7 +260,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item " data-aos="fade-down" data-aos-offset="200"
+                <div class="item col-md-3 d-flex justify-content-center" data-aos="fade-down" data-aos-offset="200"
                 data-aos-delay="100" data-aos-duration="1200" data-aos-easing="ease-in-out">
                     <div class="card csp-card">
                         <img src="assets/images/csp/3.png" alt="" class="img-card-top fs-lightbox">
@@ -339,7 +270,7 @@
                     </div>
 
                 </div>
-                <div class="item" data-aos="fade-down" data-aos-offset="200"
+                <div class="item col-md-3 d-flex justify-content-center" data-aos="fade-down" data-aos-offset="200"
                 data-aos-delay="150" data-aos-duration="1400" data-aos-easing="ease-in-out">
                     <div class="card csp-card">
                         <img src="assets/images/csp/4.png" alt="" class="img-card-top fs-lightbox">
@@ -349,7 +280,7 @@
                     </div>
 
                 </div>
-                <div class="item" data-aos="fade-down" data-aos-offset="200"
+                <div class="item col-md-3 d-flex justify-content-center" data-aos="fade-down" data-aos-offset="200"
                 data-aos-delay="200" data-aos-duration="1600" data-aos-easing="ease-in-out">
                     <div class="card csp-card">
                         <img src="assets/images/csp/5.png" alt="" class="img-card-top fs-lightbox">
@@ -363,32 +294,32 @@
         </div>
     </section>
     <section class="offers py-3">
-        <div class="container">
+        <div class="container-fluid">
             <div class="divider"><span></span><span>
                     <h1>Latest Offers</h1>
                 </span><span></span></div>
-            <div class="row py-5 d-flex justify-content-center">
-                <div class="col-md-3 mb-3" class="item" data-aos="fade-down" data-aos-offset="200"
+            <div class="row d-flex  align-items-center">
+                <div class="col-md-3 mb-3  d-flex justify-content-center" class="item" data-aos="fade-down" data-aos-offset="200"
                 data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <div class="card csp-card">
                         <img src="assets/images/csp/2.png" alt="" class="img-fluid fs-lightbox">
                     </div>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card csp-card" class="item" data-aos="fade-down" data-aos-offset="200"
-                    data-aos-delay="100" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                <div class="col-md-3 mb-3 d-flex justify-content-center" data-aos="fade-down" data-aos-offset="200"
+                data-aos-delay="100" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                    <div class="card csp-card"  >
                         <img src="assets/images/csp/3.png" alt="" class="img-fluid  fs-lightbox">
                     </div>
 
                 </div>
-                <div class="col-md-3 mb-3" class="item" data-aos="fade-down" data-aos-offset="200"
+                <div class="col-md-3 mb-3 d-flex justify-content-center"  data-aos="fade-down" data-aos-offset="200"
                 data-aos-delay="150" data-aos-duration="1400" data-aos-easing="ease-in-out">
                     <div class="card csp-card">
                         <img src="assets/images/csp/4.png" alt="" class="img-fluid  fs-lightbox">
                     </div>
 
                 </div>
-                <div class="col-md-3 mb-3" class="item" data-aos="fade-down" data-aos-offset="200"
+                <div class="col-md-3 mb-3 d-flex justify-content-center" data-aos="fade-down" data-aos-offset="200"
                 data-aos-delay="200" data-aos-duration="1600" data-aos-easing="ease-in-out">
                     <div class="card csp-card">
                         <img src="assets/images/csp/5.png" alt="" class="img-fluid  fs-lightbox">
@@ -399,7 +330,7 @@
         </div>
     </section>
     <section class="testimonial">
-        <div class="container test-user">
+        <div class="container-fluid test-user">
             <div class="divider"><span></span><span>
                     <h1>What Customer's Say</h1>
                 </span><span></span></div>
@@ -517,7 +448,7 @@
         </div>
     </section>
     <section class="brand-logo">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="three owl-carousel owl-theme">
@@ -562,19 +493,19 @@
     </section>
     <section class="csp-video py-5">
 
-        <div class="container">
+        <div class="container-fluid">
             <div class="divider"><span></span><span>
                 <h1>Product and Service Video</h1>
             </span><span></span></div>
             
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 d-flex justify-content-center">
                     <iframe style="height: 200px; max-height: 100%;  width: auto;" class="img-fluid" src="https://www.youtube.com/embed/D0UnqGm_miA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 d-flex justify-content-center">
                     <iframe style="height: 200px; max-height: 100%;  width: auto;" class="img-fluid" src="https://www.youtube.com/embed/D0UnqGm_miA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 d-flex justify-content-center">
                     <iframe style="height: 200px; max-height: 100%;  width: auto;" class="img-fluid" src="https://www.youtube.com/embed/D0UnqGm_miA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
@@ -584,8 +515,8 @@
     </section>
 
     <footer class="bg-blue text-center text-white">
-        <!-- Grid container -->
-        <div class="container p-4">
+        <!-- Grid container-fluid -->
+        <div class="container-fluid p-4">
             <!-- Section: Social media -->
             <section class="mb-4">
                 <!-- Facebook -->
@@ -723,7 +654,7 @@
             </section>
             <!-- Section: Links -->
         </div>
-        <!-- Grid container -->
+        <!-- Grid container-fluid -->
 
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
